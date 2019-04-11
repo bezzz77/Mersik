@@ -1,0 +1,139 @@
+.accordion
+  width: 100%
+  max-width: 100%
+  height: 100%
+  max-height: 680px
+  overflow: hidden
+  margin: 50px auto
+  .accordion-list
+    width: 100%
+    display: table
+    table-layout: fixed
+    margin: 0
+    padding: 0
+    .accordion-list-wrap
+      display: table-cell
+      vertical-align: bottom
+      position: relative
+      width: 16.666%
+      height: 680px
+      background-repeat: no-repeat
+      background-position: center center
+      transition: all 500ms ease
+      .blockhide
+        font-size: 24px
+        color: #fff
+        transform: rotate(45deg)
+        width: 100%
+      div
+        display: block
+        overflow: hidden
+        a
+          display: block
+          height: 250px
+          width: 100%
+          position: relative
+          z-index: 3
+          vertical-align: bottom
+          padding: 15px 20px
+          box-sizing: border-box
+          color: #fff
+          text-decoration: none
+          font-family: Open Sans, sans-serif
+          transition: all 200ms ease
+          transform: rotate(0deg)
+          .descrption
+            list-style-type: disc
+            li
+
+          *
+            opacity: 0
+            margin: 0
+            width: 100%
+            text-overflow: ellipsis
+            position: relative
+            z-index: 5
+            white-space: nowrap
+            overflow: hidden
+            -webkit-transform: translateX(-20px)
+            transform: translateX(-20px)
+            -webkit-transition: all 400ms ease
+            transition: all 400ms ease
+          h2
+            font-family: Montserrat,sans-serif
+            text-overflow: clip
+            font-size: 24px
+            text-transform: uppercase
+            margin-bottom: 2px
+            top: 160px
+          p
+            top: 160px
+            font-size: 13.5px
+      &:nth-child(1)
+        background-image: url("../img/cclass.jpg")
+      &:nth-child(2)
+        background-image: url("../img/e-class.jpg")
+      &:nth-child(3)
+        background-image: url("../img/s-class.jpg")
+      &:nth-child(4)
+        background-image: url("../img/g-class.jpg")
+      &:nth-child(5)
+        background-image: url("../img/v-class.jpg")
+    &:hover .accordion-list-wrap, &:focus-within .accordion-list-wrap
+      width: 8%
+    .accordion-list-wrap:focus
+      outline: none
+    &:hover .accordion-list-wrap:hover, .accordion-list-wrap:focus, &:focus-within .accordion-list-wrap:focus
+      width: 60%
+      .blockhide
+        display: none
+    &:hover .accordion-list-wrap:hover a, .accordion-list-wrap:focus a, &:focus-within .accordion-list-wrap:focus a
+      background: rgba(0, 0, 0, 0.4)
+    &:hover .accordion-list-wrap:hover a *, .accordion-list-wrap:focus a *, &:focus-within .accordion-list-wrap:focus a *
+      opacity: 1
+      -webkit-transform: translateX(0)
+      transform: translateX(0)
+    &:hover .accordion-list-wrap
+      width: 8% !important
+      a *
+        opacity: 0 !important
+      &:hover
+        width: 60% !important
+        a
+          background: rgba(0, 0, 0, 0.4)
+          *
+            opacity: 1 !important
+            -webkit-transform: translateX(0)
+            transform: translateX(0)
+
+@media screen and (max-width: 600px)
+  body
+    margin: 0
+  .accordion
+    height: auto
+    .accordion-list
+      li, &:hover li
+        position: relative
+        display: table
+        table-layout: fixed
+        width: 100%
+        -webkit-transition: none
+        transition: none
+        &:hover
+          position: relative
+          display: table
+          table-layout: fixed
+          width: 100%
+          -webkit-transition: none
+          transition: none
+
+.about
+  text-align: center
+  font-family: 'Open Sans', sans-serif
+  font-size: 12px
+  color: #666
+  a
+    color: blue
+    text-decoration: none
+    &:hover
+      text-decoration: underline

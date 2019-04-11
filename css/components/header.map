@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/components/header.css",
+	"sources": [
+		"../../sass/components/header.sass"
+	],
+	"sourcesContent": [
+		""
+	],
+	"mappings": "",
+	"names": []
+}

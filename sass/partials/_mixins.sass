@@ -1,0 +1,108 @@
+@mixin object-fit($fit: none, $position: null)
+  -o-object-fit: $fit
+  object-fit: $fit
+  @if $position
+    -o-object-position: $position
+    object-position: $position
+    font-family: 'object-fit: ' + $fit +' object-position: ' + $position + ''
+  @else
+    font-family: 'object-fit: ' + $fit
+@mixin flex($align: center, $justify: center)
+  display: flex
+  align-items: $align
+  justify-content: $justify
+
+//@mixin flex($direction: row, $align: flex-start, $justify: flex-start)
+//  display: flex
+//  flex-direction: $direction
+//  align-items: $align
+//  justify-content: $justify
+@mixin merc
+  font-size: 35px
+  font-family: "Daimler"
+  font-weight: normal
+  color: #fff
+@mixin mersregnorm
+  font-size: 35px
+  font-family: "Daimler,Helvetica, Arial, sans-serif"
+  font-weight: normal
+  color: #333333
+@mixin mersregsmall
+  font-size: 15px
+  font-family: "Daimler,Helvetica, Arial, sans-serif"
+  font-weight: normal
+  font-style: normal
+  color: #333333
+  line-height: 22px
+  letter-spacing: .1px
+
+
+@mixin triangle($color, $borders, $height: (($borders * 2) * 0.866%))
+  width: 0
+  height: 0
+  border-top: $borders solid transparent
+  border-left: $height solid $color
+  border-bottom: $borders solid transparent
+
+@mixin centerAbsolute()
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate3d(-50%, -50%, 0)
+
+@mixin placeholder()
+  &::-webkit-input-placeholder  /* Chrome/Opera/Safari */
+    @content
+
+  &::-moz-placeholder  /* Firefox 19+ */
+    @content
+
+  &:-ms-input-placeholder  /* IE 10+ */
+    @content
+
+  &:-moz-placeholder  /* Firefox 18- */
+    @content
+
+=font-face ($font-name, $file-name, $font-weight)
+  @font-face
+    font-family: quote($font-name)
+    src: url("../fonts/"+ $file-name + ".woff2") format("woff2"),
+    url("../fonts/"+ $file-name + ".woff") format("woff")
+    font-weight: $font-weight
+    font-style: normal
+
+=daimler ($font-base, $base-color, $font-weight )
+  font-size: $font-base
+  color: $base-color
+  @font-face
+    font-family: "Daimler"
+    src: url("../fonts/Corporate_A/ufonts_com_corporate_a_regular_1_.ttf") format("truetype")
+    font-weight: $font-weight
+    font-style: normal
+
+
+=fully
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+=transition
+  transition-duration: 0.3s
+  transition-timing-function: cubic-bezier(0.6, 0, 0.41, 1)
+
+=transition05
+  transition-duration: 0.5s
+  transition-timing-function: cubic-bezier(0.6, 0, 0.41, 1)
+
+=transition1
+  transition-duration: 1s
+  transition-timing-function: cubic-bezier(0.6, 0, 0.41, 1)
+
+=transition15
+  transition-duration: 1.5s
+  transition-timing-function: cubic-bezier(0.6, 0, 0.41, 1)
+
+@function letter-spacing($size, $font-size)
+  @return ($size / $font-size) * 1em
