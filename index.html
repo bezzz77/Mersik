@@ -8,9 +8,9 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript"  src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript"  src="js/jquery-3.3.1.js"></script>
-    <script type="text/javascript"  src="js/main.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.theme.default.css">
 </head>
 <body>
   <header class="headeranim">
@@ -19,13 +19,13 @@
         <li class="header_list-logo"><a href="#"><img src="img/logom.png" alt=""></a></li>
       </ul>
       <ul class="header_list-txt" id="menu">
-        <li class="header_list-txt"><a href="#mbeclass" >Vehicles</a></li>
-        <li class="header_list-txt"><a href="#">Vehicles</a></li>
+        <li class="header_list-txt vievhidemenu"><a href="#mbeclass" >Vehicles</a></li>
+        <li class="header_list-txt "><a href="#">Vehicles</a></li>
         <li class="header_list-txt"><a href="#">Vehicles</a></li>
         <li class="header_list-txt"><a href="#">Vehicles</a></li>
       </ul>
       </div>
-      <div class="header_fade">
+      <div class="header_fade" style="display:none">
         <div class="fadeforveh sclass allclases">
           <p>S - class.</p>
           <span>The automotive benchmark.</span>
@@ -67,7 +67,7 @@
           </div>
 
         </section>
-        <section class="thirdsection">
+        <section class="thirdsection wow fadeIn">
           <div class="containerbigsize">
             <div class="design_wrap">
               <div class="design-bg">
@@ -78,13 +78,14 @@
                   <h2>Sensual Purity and Modern Luxury.</h2>
                   <p>The designers at Mercedes-Benz are reconciling tradition and modernity in designing the cars for the future. Their work centres on “Sensual Purity” as an expression of modern luxury. The new design idiom featuring reduced edges and creases – indentations and recesses in the sheet metal – aims to create clear forms and sensual surfaces which showcase high tech while also arousing emotions. Design creates something out of the ordinary and makes a major contribution to shaping the brand image. For Mercedes-Benz designers, good design has to be both beautiful and intelligent.</p>
                 </div>
+
               </div>
             </div>
 
           </div>
 
         </section>
-        <section class="intro containerbigsize">
+        <section class="intro containerbigsize wow fadeIn " data-wow-offset="200">
           <div class="accordion">
             <ul class="accordion-list">
               <li class="accordion-list-wrap" tabindex="1">
@@ -134,6 +135,133 @@
             </ul>
           </div>
         </section>
+
+        <section class="fourthsection wow fadeIn">
+          <div class="containerbigsize">
+            <div class="inovation_wrap">
+              <div class="inovation-bg">
+                <p class="inovation-txt containersmall">Mercedes-Benz Inovation.</p>
+              </div>
+              <div class="design_description  containerbigsize">
+                <div class="descrptionfordessmsize containersmall ">
+                  <h2>Striving for Innovations.</h2>
+                  <p>As a pioneer of the automobile, we seek innovations which provide for pleasant, safe and resource-friendly mobility, day in, day out. Discover our visionary ideas for vehicles, mobility concepts, e-mobility and digital networking of the future – as well as the solutions with which we are already shaping the present. With the CASE strategy, Daimler focuses on the four major trends influencing future mobility – Connected, Autonomous, Shared & Services and Electric. And Daimler is already making great progress in all of these fields to shape the future of mobility. Each of the four CASE fields in itself already changes mobility fundamentally; however, the revolutionary potential only becomes apparent when the CASE fields are combined.</p>
+                </div>
+              </div>
+              <div class="inovationblocks_wrap  wow slideInUp ">
+                <div class="inbigsblock">
+                  <div class="bigblockforin oneblockbs">
+                      <a href="#"  class="advancstyle hovforinov">
+                        <p class="">Advance Engineering.</p>
+                        <span hidden>The Mercedes-Benz of the future will become an intelligent, automotive companion that recognises moods a...</span>
+                      </a>
+                  </div>
+                </div>
+                <div class="insmallsizeblocks">
+                  <div class="fourssblock oneblcsm">
+                      <a href="#" class="advancstyle hovforinov">
+                        <p class="">Automation.</p>
+                        <span hidden>Autonomous driving will fundamentally revolutionise the automobile. Artificial intelligence will play a...</span>
+                      </a>
+                  </div>
+                  <div class="fourssblock twoblcsm">
+                      <a href="#" class="advancstyle hovforinov">
+                        <p class="">E-Mobility </p>
+                        <span hidden>The expression “We should change the world” never changed the world. Mercedes-Benz wants to start the el...</span>
+                      </a>
+                  </div>
+                  <div class="fourssblock threeblcsm">
+                      <a href="#" class="advancstyle hovforinov">
+                        <p class="">Mobility Concept </p>
+                        <span hidden>The future of mobility offers more flexibility and countless new possibilities that will make our lives...</span>
+                      </a>
+                  </div>
+                  <div class="fourssblock fourblcsm">
+                      <a href="#" class="advancstyle hovforinov">
+                        <p class="">Connectivity </p>
+                        <span hidden>For Mercedes-Benz, connectivity means more than Internet in the car. Even those who are not sitting behi...</span>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="fivesection wow fadeIn ">
+          <div class=" containerbigsize">
+            <div class="sport_wrap">
+              <div class="sport_head">
+                <h2>Sports</h2>
+              </div>
+            </div>
+            <div class="owl-carousel owl-theme owl-loaded wow fadeIn">
+              <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item carouselsportforall carousel_formulaone">
+                      <img src="img/formulae.jpg" alt="">
+                      <p>Formula E</p>
+                      <button type="button" name="button" class="merc-btn">Load more</button>
+                    </div>
+                    <div class=" owl-item carouselsportforall carousel_formulae">
+                      <img src="img/formulaone.jpg" alt="">
+                      <p>Formula 1</p>
+                      <button type="button" name="button" class="merc-btn">Load more</button>
+                    </div>
+                    <div class="owl-item carouselsportforall carousel_football">
+                      <img src="img/football.jpg" alt="">
+                      <p>Football</p>
+                      <button type="button" name="button" class="merc-btn">Load more</button>
+                    </div>
+                    <div class="owl-item carouselsportforall carousel_golf">
+                      <img src="img/golf.jpg" alt="">
+                      <p>Golf</p>
+                      <button type="button" name="button" class="merc-btn">Load more</button>
+                    </div>
+                    <div class="owl-item carouselsportforall carousel_mount">
+                      <img src="img/mount.jpg" alt="">
+                      <p>Mounting</p>
+                      <button type="button" name="button" class="merc-btn">Load more</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- <div class="owl-carousel ">
+              <div class="carousel_formulaone">
+                <img src="img/eclass.jpg" alt="">
+                <p></p>
+              </div>
+              <div class="carousel_formulae">
+                <img src="img/eclass.jpg" alt="">
+                <p></p>
+              </div>
+              <div class="carousel_football">
+                <img src="img/eclass.jpg" alt="">
+                <p></p>
+              </div>
+              <div class="carousel_golf">
+                <img src="img/eclass.jpg" alt="">
+                <p></p>
+              </div>
+              <div class="carousel_mount">
+                <img src="img/eclass.jpg" alt="">
+                <p></p>
+              </div>
+            </div> -->
+
+          </div>
+
+        </section>
       </main>
+
+  <script type="text/javascript"  src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript"  src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript"  src="js/wow.min.js"></script>
+  <script type="text/javascript"  src="OwlCarousel2/dist/owl.carousel.min.js"></script>
+  <script type="text/javascript"  src="js/main.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>

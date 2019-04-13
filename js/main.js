@@ -69,5 +69,32 @@ $(document).ready(function(){
 
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1500);
+
 	});
+  var linc2 = $('.header_fade'),
+      timeoutId;
+    $('.vievhidemenu').hover(function(){
+        clearTimeout(timeoutId);
+        linc2.show();
+    }, function(){
+        timeoutId = setTimeout($.proxy(linc2,'hide'), 1000)
+    });
+    linc2.mouseenter(function(){
+        clearTimeout(timeoutId);
+    }).mouseleave(function(){
+        linc2.hide();
+    });
+});
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items:1,
+    autoplay: 0,
+    autoplaySpeed: 1000,
+    itemsDesktop: [1199, 1],
+    itemsMobile: [479, 1],
+    dots : true,
+  }
+
+  );
+
 });

@@ -1,0 +1,90 @@
+.fourthsection
+  height: 100%
+.inovation-bg
+  width: 100%
+  height: 800px
+  background-image: url("../img/inovation.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+.inovation-txt
+  padding-top: 60px
+  @include mersregnorm
+  &::before
+    content: ""
+    display: block
+    width: 60px
+    height: 2px
+    background-color: black
+    margin-bottom: 30px
+.inovationblocks_wrap
+  display: flex
+  justify-content: flex-start
+.inbigsblock
+  background-image: url("../img/advdes.jpg")
+  width: 50%
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+  border: 1px solid black
+  border-right: 0
+.bigblockforin
+  a
+    position: absolute
+    bottom: 0
+    left: 0
+.advancstyle
+  p
+    font-family: "Daimler", Helvetica, Arial, sans-serif
+    font-size: 22px
+    font-weight: 400
+    letter-spacing: normal
+    line-height: 24px
+    color: #fff
+    padding: 20px 20px 10px 20px
+  span
+    font-family: "Daimler", Helvetica, Arial, sans-serif
+    font-size: 15px
+    font-weight: 400
+    letter-spacing: normal
+    line-height: 24px
+    color: #fff
+    padding: 0px 20px 10px 20px
+
+.insmallsizeblocks
+  width: 50%
+  display: grid
+  grid-template-columns:  50% 50%
+  justify-content: center
+.fourssblock
+  width: 100%
+  height: 200px
+  position: relative
+  background-size: cover
+  background-repeat: no-repeat
+  border: 1px solid black
+  border-right: 0
+  a
+    position: absolute
+    bottom: 0
+    left: 0
+.oneblcsm
+  background-image: url("../img/avtomation.jpg")
+.twoblcsm
+  background-image: url("../img/emobil.jpg")
+.threeblcsm
+  background-image: url("../img/concept.jpg")
+.fourblcsm
+  background-image: url("../img/connect.jpg")
+.hovforinov
+  width: 100%
+  height: 50px
+  background-color: rgba(0, 0, 0, 0.286)
+  &:hover
+    transition: .5s
+    background-color: rgba(0, 0, 0, 0.686)
+    width: 100%
+    height: 100px
+    span
+      display: block
+      &:hover
+        transition: height 0.5s ease 0s, 1.5s ease 0s
