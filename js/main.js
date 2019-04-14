@@ -75,14 +75,14 @@ $(document).ready(function(){
       timeoutId;
     $('.vievhidemenu').hover(function(){
         clearTimeout(timeoutId);
-        linc2.show();
+        linc2.show('slow');
     }, function(){
         timeoutId = setTimeout($.proxy(linc2,'hide'), 1000)
     });
     linc2.mouseenter(function(){
         clearTimeout(timeoutId);
     }).mouseleave(function(){
-        linc2.hide();
+        linc2.hide('slow');
     });
 });
 $(document).ready(function(){
