@@ -1,0 +1,105 @@
+.sixthsection
+  height: 100%
+.event_wrap
+  padding-top: 40px
+.event-bg
+  width: 100%
+  height: 700px
+  background-image: url("../img/driving.jpg")
+  background-size: contain
+  background-repeat: no-repeat
+.driveventsm
+  padding-top: 30px
+  @include mersregsmallwh
+.event-txt
+  padding-top: 60px
+  @include merc
+  &::before
+    content: ""
+    display: block
+    width: 60px
+    height: 2px
+    background-color: white
+    margin-bottom: 30px
+.twoblocksforevent
+  display: flex
+  padding-right: 30%
+.event_description
+  background-color: #fff
+  padding-top: 70px
+  padding-bottom: 70px
+.eventdescripwr
+  padding-right: 50px
+  &:nth-last-child(2n+1)
+    padding-right: 0
+  h2
+    padding-bottom: 20px
+    @include mersregnorm font-size:24px
+    &::before
+      content: ""
+      display: block
+      width: 60px
+      height: 2px
+      background-color: #333333
+      margin-bottom: 30px
+  p
+    @include mersregsmall
+.evhov_wrap
+  display: flex
+.eventhoverefecblockone
+  width: 100%
+  display: flex
+.firstblockfordriv
+  width: 100%
+  height: 460px
+  position: relative
+  background-size: cover
+  background-repeat: no-repeat
+  border: 1px solid black
+  border-right: 0
+  a
+    position: absolute
+    bottom: 0
+    left: 0
+    p
+      padding: 30px 0 0 30px
+      @include mersregnorm color:#fff
+.blcfordriv
+  background-image: url("../img/amggt.jpg")
+.blcfordramg
+  background-image: url("../img/drevent.jpg")
+.blcforsummer
+  background-image: url("../img/summer.jpg")
+.blcfortravel
+  background-image: url("../img/travel.jpg")
+.hovforamg
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.286)
+  &:hover
+    transition: .5s
+    background-color: rgba(0, 0, 0, 0.686)
+    width: 100%
+    height: 100%
+    p
+      display: none
+    span
+      display: block
+      text-align: center
+      padding-top: 30%
+      &:hover
+        transition: height 0.5s ease 0s, 1.5s ease 0s
+.evenstyleblock
+  span
+    @include mersregsmallwh
+.backglineforevent
+  width: 100%
+  height: 300px
+  background-color: #fff
+.flexbigsizevideo
+  display: flex
+.eventgridvideos
+  display: grid
+  grid-template-columns: 555px 555px auto
+  grid-template-rows: 315px 315px auto
+.smsizevidforevent
